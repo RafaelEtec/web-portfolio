@@ -1,0 +1,89 @@
+body {
+    background-color: #0a192f;
+    overflow-x: hidden;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+}
+
+.flexbox {
+    display: flex;
+}
+
+.left-panel {
+    position: sticky;
+    height: 100vh;
+    width: 40%;
+    top: 13%;
+    left: 6.5%;
+}
+
+.right-panel {
+    height: 400rem;
+    width: 40%;
+    margin-top: 8%;
+    margin-left: 4%;
+}
+
+.footer {
+    position: relative;
+    height: 5rem;
+    top: 40%;
+}
+
+.lp-nome {
+    font-family: "Mulish", sans-serif;
+    font-size: 2.8rem;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 800;
+    color: #e6f1ff;
+}
+
+.lp-cargo {
+    margin-top: -1rem;
+    font-family: "Mulish", sans-serif;
+    font-size: 1.2rem;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    color: #e6f1ff;
+}
+
+.lp-desc {
+    font-family: "Mulish", sans-serif;
+    font-size: 1rem;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 600;
+    color: #8892b0;
+}
+
+.rp-about-me {
+    font-family: "Mulish", sans-serif;
+    font-size: 1rem;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 600;
+    color: #8892b0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.bi {
+    font-size: 2rem;
+    margin-left: 1.2rem;
+    color: #8892b0;
+}
+
+.bi:hover {
+    filter: brightness(150%);
+}
+
+a {
+    text-decoration: none;
+}
