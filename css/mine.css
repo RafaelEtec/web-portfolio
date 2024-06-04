@@ -12,9 +12,9 @@ body {
     display: flex;
 }
 
-.left-panel {
+.left-panel { 
     position: sticky;
-    height: 100vh;
+    height: 40rem;
     width: 40%;
     top: 13%;
     left: 6.5%;
@@ -24,13 +24,13 @@ body {
     height: 400rem;
     width: 40%;
     margin-top: 8%;
-    margin-left: 4%;
+    margin-left: 8%;
 }
 
 .footer {
-    position: relative;
-    height: 5rem;
-    top: 40%;
+    position: absolute;
+    height: 3rem;
+    top: 100%;
 }
 
 .lp-nome {
