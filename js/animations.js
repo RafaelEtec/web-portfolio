@@ -12,7 +12,6 @@ setTimeout(()=>{
   }, 800)
 }, 3200)
 
-
 const anim = anime.timeline({
   loop: false,
   direction: 'alternate',

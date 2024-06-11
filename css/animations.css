@@ -34,8 +34,13 @@
   transition: all ease-in-out;
 }
 
+.appear-nav {
+  animation: appear 6.5s;
+  transition: all ease-in-out;
+}
+
 .appear-social {
-  animation: appear 7s;
+  animation: appear 7.5s;
   transition: all ease-in-out;
 }
 
