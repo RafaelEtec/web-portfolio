@@ -15,7 +15,33 @@
     <title>Rafael Ferreira Goulart</title>
 </head>
 <body>
-    <div class="main">
+    <div v-show="isMobile" class="mobileShow">
+        <p class="mobileShowP1">ESTE WEBSITE AINDA NÃO É SUPORTADO POR CELULARES :/</p>
+        <p class="mobileShowP2">Ainda há muito a aprender</p>
+        <svg class="svg-r-mobile" id="hexagon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g>
+            <g id="R" transform="translate(39.5, 33.5)" fill="#64FFDA" style="opacity: 0" font-family="Bebas Neue, sans-serif" font-size="50" font-style="normal" font-weight="400">
+                <text>
+                <tspan x="0.141666985" y="33">R</tspan>
+                </text>
+            </g>
+            <path 
+            stroke="#64FFDA" 
+            stroke-width="5" 
+            stroke-linecap="round" 
+            stroke-linejoin="round" 
+            d="M 50, 5
+                L 11, 27
+                L 11, 72
+                L 50, 95
+                L 89, 73
+                L 89, 28 z"
+                />
+            </g>
+        </svg>
+    </div>
+
+    <div v-show="!isMobile" class="main cursehover">
         <div class="flexbox">
             <!-- Painel esquerdo (FIXED) -->
             <div class="left-panel">
@@ -42,9 +68,6 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#projetos"> Projetos</i></a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#hobbies"> Hobbies</a>
-                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -60,27 +83,22 @@
             </div>
             
             <!-- Painel direito (SCROLLABLE) -->
-            <div class="right-panel">
+            <div class="right-panel" id="sobre-mim">
                 <div class="container rp">
                     <div class="row appear-rp">
-                        <div class="col-12 col-sobre-mim" id="sobre-mim">
+                        <div class="col-12 col-sobre-mim">
                             <p class="p-rp rp-sobre-mim">
-                                Meu relacionamento com a 
+                                Sobre mim
                             </p>
                         </div>
                         <div class="col-12 col-experiencia" id="experiencia">
                             <p class="p-rp rp-experiencia">
-                                Meu relacionamento com a 
+                                Experiencias
                             </p>
                         </div>
                         <div class="col-12 col-projetos" id="projetos">
                             <p class="p-rp rp-projetos">
-                                Meu relacionamento com a 
-                            </p>
-                        </div>
-                        <div class="col-12 col-hobbies" id="hobbies">
-                            <p class="p-rp rp-hobbies">
-                                Meu relacionamento com a 
+                                Projetos 
                             </p>
                         </div>
                     </div>
@@ -118,8 +136,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <script src="js/main.js"></script>
     <script src="js/animations.js"></script>
     <script src="js/selenium.js"></script>
+    <script src="js/vue.js"></script>
 </body>
 </html>

@@ -40,6 +40,13 @@
   top: 40%;
   left: 40%;
 }
+.svg-r-mobile {
+  position: relative;
+  width: 20%;
+  height: 20%;
+  top: 25%;
+  left: 0%;
+}
 
 .appear-lp {
   animation: appear 5.5s;
