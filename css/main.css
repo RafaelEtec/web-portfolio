@@ -1,13 +1,14 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    font-size: 1em;
 }
 
 .mobileShow {
     display: none;
     position: fixed;
     background-color: #0a192f;
-    left: 5%;
+    left: 2%;
     top: 40%;
     width: 100%;
     height: 100%;
@@ -42,7 +43,8 @@ body {
     display: flex;
 }
 
-.left-panel { 
+.left-panel {
+    display: block;
     position: sticky;
     height: 50rem;
     width: 40%;
@@ -61,6 +63,7 @@ body {
 }
 
 .nav {
+    margin-top: 2%;
     position: fixed;
     left: 10%;
     top: 50%;
@@ -68,10 +71,12 @@ body {
 
 .nav-link {
     color: #64ffdb80;
+    transition: transform .2s ease-in;
 }
 
 .nav-link:hover {
     color: #64FFDA;
+    transform: translateX(20%);
 }
 
 .nav-item {

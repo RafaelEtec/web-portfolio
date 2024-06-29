@@ -3,9 +3,9 @@ function isMobile() {
     return regex.test(navigator.userAgent);
 }
 
-isMobile = isMobile()
+ism = isMobile()
 
-if (isMobile) {
+if (ism) {
     console.log("Mobile device detected");
 } else {
     console.log("Desktop device detected");
@@ -13,9 +13,9 @@ if (isMobile) {
 
 new Vue({
     el: ".main",
-    dada() {
+    data() {
         return {
-            isMobile: isMobile,
+            isMobile: ism,
         }
     }
 })
