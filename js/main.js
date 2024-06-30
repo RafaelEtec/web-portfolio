@@ -1,7 +1,13 @@
-document.getElementById("n-i-sobre-mim").addEventListener("click", clicado);
-document.getElementById('nav-link-e');
-document.getElementById('nav-link-p');
+isClickedS = true, isClickedE = false, isClickedP = false;
 
-function clicado() {
-    console.log("clicado")
+function clicado(nav) {
+    if (nav == 1) {
+        
+    } else if (nav == 2) {
+
+    } else if (nav == 3) {
+
+    } else {
+        console.log("Burlando o sistema amigão?")
+    }
 }
