@@ -74,3 +74,13 @@
   85% { opacity: 0.2;}
   100% {  opacity: 1; }
 }
+
+.bi:hover {
+  transform: translate(0, -5px);
+  color: #64FFDA;
+}
+
+.nav-link:hover {
+  color: #64FFDA;
+  transform: translateX(20%);
+}

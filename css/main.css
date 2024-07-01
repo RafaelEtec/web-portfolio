@@ -70,13 +70,10 @@ body {
 }
 
 .nav-link {
+    font-family: "Roboto Mono", monospace;
+    font-size: 1rem;
     color: #64ffdb80;
     transition: transform .2s ease-in;
-}
-
-.nav-link:hover {
-    color: #64FFDA;
-    transform: translateX(20%);
 }
 
 .nav-item {
@@ -159,11 +156,6 @@ body {
     margin: 0 auto;
     fill: none;
   }
-
-.bi:hover {
-    transform: translate(0, -5px);
-    color: #64FFDA;
-}
 
 a {
     text-decoration: none;

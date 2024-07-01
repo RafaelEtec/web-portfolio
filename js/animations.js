@@ -9,8 +9,24 @@ setTimeout(()=>{
   splashScreen.style.opacity = 0;
   setTimeout(()=>{
     splashScreen.classList.add('hidden')
+    setTimeout(()=>{
+      typeWriter();
+    }, 200);
   }, 800)
 }, 3200)
+
+var i = 0;
+var txt = 'Rafael Goulart';
+var speed = 150;
+
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("lp-nome").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
 
 const startsplash = anime.timeline({
   loop: false,
