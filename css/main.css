@@ -141,8 +141,12 @@ a {
 
 .blur {
     position: absolute;
-    box-shadow: 0 0 1000px 50px #64FFDA;
+    box-shadow: 0 0 1000px 50px #3869b3;
     z-index: -100;
+}
+
+.highlight {
+    color: #64FFDA;
 }
 
 @media (width < 1200px) {
