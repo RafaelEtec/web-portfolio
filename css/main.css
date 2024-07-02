@@ -1,7 +1,6 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
-    font-size: 1em;
 }
 
 body {
@@ -74,16 +73,19 @@ body {
 }
 
 .lp-nome {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #e6f1ff;
+    white-space: nowrap;
     font-family: "Roboto Mono", monospace;
     font-size: 2.8rem;
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: 800;
-    color: #e6f1ff;
     margin-top: -4%;
 }
 
 .lp-cargo {
+    white-space: nowrap;
     margin-top: -1rem;
     font-family: "Roboto Mono", monospace;
     font-size: 1.2rem;
@@ -137,6 +139,12 @@ a {
     text-decoration: none;
 }
 
+.blur {
+    position: absolute;
+    box-shadow: 0 0 1000px 50px #64FFDA;
+    z-index: -100;
+}
+
 @media (width < 1200px) {
     header {
         grid-template-columns: repeat(2, 1fr);
@@ -162,6 +170,8 @@ a {
         width: 100%;
     }
     .right-panel {
+        left: 6.5%;
+        margin-left: 0%;
         align-self: center;
         position: relative;
         display: flex;
@@ -171,9 +181,15 @@ a {
 }
 
 @media (width < 600px) {
-    header {
-        grid-template-columns: repeat(2, 1fr);
+    .lp-nome {
+        font-family: "Roboto Mono", monospace;
+        font-size: 2.2rem;
+        font-style: normal;
+        font-weight: 800;
+        color: #e6f1ff;
+        margin-top: -4%;
     }
+
     .footer {
         position: relative;
         height: 3.2rem;
@@ -196,10 +212,60 @@ a {
         width: 100%;
     }
     .right-panel {
-        margin-top: 2%;
+        left: 6.5%;
+        margin-left: 0%;
+        margin-top: 4%;
         position: relative;
         display: flex;
         height: 100%;
-        width: 80%;
+        width: 90%;
+    }
+}
+
+@media (width < 430px) {
+    .left-panel {
+        height: 90%;
+    }
+}
+
+@media (width < 400px) {
+    .lp-nome {
+        font-family: "Roboto Mono", monospace;
+        font-size: 2.2rem;
+        font-style: normal;
+        font-weight: 800;
+        color: #e6f1ff;
+        margin-top: -4%;
+    }
+
+    .footer {
+        position: relative;
+        height: 3.2rem;
+        width: 14rem;
+        left: -1.2rem;
+        bottom: 0rem;
+    }
+    .nav-link {
+        display: none;
+    }
+    .flexbox {
+        display: contents;
+    }
+    .left-panel {
+        top: 13%;
+        left: 6.5%;
+        display: inline-flex;
+        position: relative;
+        height: 80%;
+        width: 100%;
+    }
+    .right-panel {
+        left: 6.5%;
+        margin-left: 0%;
+        margin-top: 4%;
+        position: relative;
+        display: flex;
+        height: 100%;
+        width: 90%;
     }
 }
