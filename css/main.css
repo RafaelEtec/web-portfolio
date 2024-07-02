@@ -4,31 +4,6 @@ html {
     font-size: 1em;
 }
 
-.mobileShow {
-    display: none;
-    position: fixed;
-    background-color: #0a192f;
-    left: 2%;
-    top: 40%;
-    width: 100%;
-    height: 100%;
-}
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 480px){ 
-    .mobileShow {
-        display: inline-block;
-    }
-}
-.mobileShowP1 {
-    font-family: "Roboto Mono", monospace;
-    color: #e6f1ff;
-}
-.mobileShowP2 {
-    font-family: "Roboto Mono", monospace;
-    color: #64FFDA;
-}
-
 body {
     background-color: #0a192f;
     overflow-x: hidden;
@@ -64,10 +39,10 @@ body {
 }
 
 .nav {
-    margin-top: 2%;
-    position: fixed;
+    position: relative;
     left: 10%;
     top: 50%;
+    margin-top: 5%;
 }
 
 .nav-link {
@@ -78,7 +53,7 @@ body {
 }
 
 .nav-item {
-    display: inline;
+    display: inline-flex;
 }
 
 .footer {
@@ -156,8 +131,75 @@ body {
     height: 100%;
     margin: 0 auto;
     fill: none;
-  }
+}
 
 a {
     text-decoration: none;
+}
+
+@media (width < 1200px) {
+    header {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer {
+        position: relative;
+        height: 3.2rem;
+        width: 14rem;
+        left: -1.2rem;
+        bottom: 0rem;
+    }
+    .nav-link {
+        display: none;
+    }
+    .flexbox {
+        display: contents;
+    }
+    .left-panel {
+        top: 13%;
+        display: inline-flex;
+        position: relative;
+        height: 40%;
+        width: 100%;
+    }
+    .right-panel {
+        align-self: center;
+        position: relative;
+        display: flex;
+        height: 100%;
+        width: 80%;
+    }
+}
+
+@media (width < 600px) {
+    header {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer {
+        position: relative;
+        height: 3.2rem;
+        width: 14rem;
+        left: -1.2rem;
+        bottom: 0rem;
+    }
+    .nav-link {
+        display: none;
+    }
+    .flexbox {
+        display: contents;
+    }
+    .left-panel {
+        top: 13%;
+        left: 6.5%;
+        display: inline-flex;
+        position: relative;
+        height: 50%;
+        width: 100%;
+    }
+    .right-panel {
+        margin-top: 2%;
+        position: relative;
+        display: flex;
+        height: 100%;
+        width: 80%;
+    }
 }

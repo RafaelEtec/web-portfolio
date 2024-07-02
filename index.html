@@ -15,33 +15,7 @@
     <title>Rafael Ferreira Goulart</title>
 </head>
 <body>
-    <div v-show="isMobile" class="mobileShow">
-        <p class="mobileShowP1">ESTE WEBSITE AINDA NÃO É SUPORTADO POR CELULARES :/</p>
-        <p class="mobileShowP2">Ainda há muito a aprender</p>
-        <svg class="svg-r-mobile" id="hexagon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <g>
-            <g id="R" transform="translate(39.5, 33.5)" fill="#64FFDA" style="opacity: 0" font-family="Bebas Neue, sans-serif" font-size="50" font-style="normal" font-weight="400">
-                <text>
-                <tspan x="0.141666985" y="33">R</tspan>
-                </text>
-            </g>
-            <path 
-            stroke="#64FFDA" 
-            stroke-width="5" 
-            stroke-linecap="round" 
-            stroke-linejoin="round" 
-            d="M 50, 5
-                L 11, 27
-                L 11, 72
-                L 50, 95
-                L 89, 73
-                L 89, 28 z"
-                />
-            </g>
-        </svg>
-    </div>
-
-    <div v-show="!isMobile" class="main">
+    <div class="main">
         <div class="flexbox">
             <!-- Painel esquerdo (FIXED) -->
             <div class="left-panel">
@@ -55,32 +29,34 @@
                             <p class="lp-cargo">Adepto da programação</p>
                             <p class="lp-desc">Fascinado pela programação e áreas correlatas, gosto de oferecer soluções aos problemas do nosso cotidiano.</p>
                         </div>
+
+                        <div class="col-8">
+                            <nav class="nav appear-nav">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item" id="navs">
+                                        <a id="nav-link-s" class="nav-link active" onclick="clicado(1)" aria-current="page" href="#sobre-mim"> Sobre mim</a>
+                                    </li>
+                                    <li class="nav-item" id="nave">
+                                        <a id="nav-link-e" class="nav-link" onclick="clicado(2)" href="#experiencia" > Expêriencia</i></a>
+                                    </li>
+                                    <li class="nav-item" id="navp">
+                                        <a id="nav-link-p" class="nav-link" onclick="clicado(3)" href="#projetos"> Projetos</i></a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        
+                        <div class="col-8 social">
+                            <div class="footer appear-social">
+                                <li class="li-social">
+                                    <a rel="noopener noreferrer" target="_blank" href="https://github.com/RafaelEtec"><i class="bi bi-github"></i></a>
+                                    <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/rafael-goulart-/"><i class="bi bi-linkedin"></i></a>
+                                    <a rel="noopener noreferrer" target="_blank" href="https://app.hackthebox.com/users/1845183"><i class="bi bi-box"></i></a>
+                                    <a rel="noopener noreferrer" target="_blank" href="https://www.credly.com/users/rafael-goulart.e73b608e/badges"><i class="bi bi-credly"><svg class="svg-credly" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="x100Y100 meet" viewBox="0 2 16 16" width="32" height="38" class="ac-icon__image"><path stroke="currentColor" d="M7.977 12.47c-2.546 0-4.606-2.035-4.606-4.543 0-2.509 2.06-4.543 4.606-4.543 2.544 0 4.607 2.034 4.607 4.543 0 2.508-2.063 4.543-4.607 4.543m0-11.425H1v6.882c0 3.802 3.124 6.881 6.977 6.881s6.977-3.08 6.977-6.88c0-3.802-3.124-6.883-6.977-6.883" fill="none" fill-rule="evenodd"></path></svg></i></a>
+                                </li>
+                            </div>
+                        </div>
                     </div>
-
-                    <nav class="nav appear-nav">
-                        <ul class="nav flex-column">
-                            <li class="nav-item" id="navs">
-                                <a id="nav-link-s" class="nav-link active" onclick="clicado(1)" aria-current="page" href="#sobre-mim"> Sobre mim</a>
-                            </li>
-                            <li class="nav-item" id="nave">
-                                <a id="nav-link-e" class="nav-link" onclick="clicado(2)" href="#experiencia" > Expêriencia</i></a>
-                            </li>
-                            <li class="nav-item" id="navp">
-                                <a id="nav-link-p" class="nav-link" onclick="clicado(3)" href="#projetos"> Projetos</i></a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-
-                <div class="output"></div>
-
-                <div class="footer appear-social">
-                    <li class="li-social">
-                        <a rel="noopener noreferrer" target="_blank" href="https://github.com/RafaelEtec"><i class="bi bi-github"></i></a>
-                        <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/rafael-goulart-/"><i class="bi bi-linkedin"></i></a>
-                        <a rel="noopener noreferrer" target="_blank" href="https://app.hackthebox.com/users/1845183"><i class="bi bi-box"></i></a>
-                        <a rel="noopener noreferrer" target="_blank" href="https://www.credly.com/users/rafael-goulart.e73b608e/badges"><i class="bi bi-credly"><svg class="svg-credly" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="x100Y100 meet" viewBox="0 2 16 16" width="32" height="38" class="ac-icon__image"><path stroke="currentColor" d="M7.977 12.47c-2.546 0-4.606-2.035-4.606-4.543 0-2.509 2.06-4.543 4.606-4.543 2.544 0 4.607 2.034 4.607 4.543 0 2.508-2.063 4.543-4.607 4.543m0-11.425H1v6.882c0 3.802 3.124 6.881 6.977 6.881s6.977-3.08 6.977-6.88c0-3.802-3.124-6.883-6.977-6.883" fill="none" fill-rule="evenodd"></path></svg></i></a>
-                    </li>
                 </div>
             </div>
             

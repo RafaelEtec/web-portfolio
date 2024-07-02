@@ -57,6 +57,12 @@
   animation: appear 5.5s;
   transition: all ease-in-out;
 }
+@media (width < 1200px) {
+  .appear-rp {
+    animation: appear 8.5s;
+    transition: all ease-in-out;
+  }
+}
 
 .appear-nav {
   animation: appear 6.5s;
