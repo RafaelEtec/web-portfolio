@@ -1,5 +1,10 @@
 My web portfolio
 
+Using: \
+HTML, CSS, JS \
+Vue.js \
+Anime.js \
+
 Not yet finished!
 
 credits: \
