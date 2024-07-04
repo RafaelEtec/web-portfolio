@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet">
     <title>Rafael Ferreira Goulart</title>
 </head>
 <body>
@@ -55,6 +56,11 @@
                                     <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/rafael-goulart-/"><i class="bi bi-linkedin"></i></a>
                                     <a rel="noopener noreferrer" target="_blank" href="https://app.hackthebox.com/users/1845183"><i class="bi bi-box"></i></a>
                                     <a rel="noopener noreferrer" target="_blank" href="https://www.credly.com/users/rafael-goulart.e73b608e/badges"><i class="bi bi-credly"><svg class="svg-credly" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="x100Y100 meet" viewBox="0 2 16 16" width="32" height="38" class="ac-icon__image"><path stroke="currentColor" d="M7.977 12.47c-2.546 0-4.606-2.035-4.606-4.543 0-2.509 2.06-4.543 4.606-4.543 2.544 0 4.607 2.034 4.607 4.543 0 2.508-2.063 4.543-4.607 4.543m0-11.425H1v6.882c0 3.802 3.124 6.881 6.977 6.881s6.977-3.08 6.977-6.88c0-3.802-3.124-6.883-6.977-6.883" fill="none" fill-rule="evenodd"></path></svg></i></a>
+                                    <i @click="show = !show" class="bi bi-file-earmark-person"></i>
+                                    <template v-if="show">
+                                        <i class="emoji_flag"><a href="rafael-goulart-cv-pt.pdf" target="_blank">🇧🇷</a></i>
+                                        <i class="emoji_flag"><a href="rafael-goulart-cv-en.pdf" target="_blank">🇺🇸</a></i>
+                                    </template>
                                 </li>
                             </div>
                         </div>
@@ -69,7 +75,7 @@
                         <main>
                             <section class="col-12 col-sobre-mim">
                                 <p class="p-rp rp-sobre-mim">
-                                    Pude atuar como estagiário na <span class="highlight">Servix Informática</span>, conhecendo diversas áreas da Infraestrutura de uma empresa. Reconheci a importância em saber um pouco sobre redes, e o que a aplicação, ou má aplicação dela pode causar. Aprendi sobre a segurança, tanto de redes, quanto WEB, e acredito ter um bom conhecimento em relação a boas práticas e cuidados quando trabalhando com produtos de uma empresa. Desenvolvi automações com <span class="highlight">VBA</span> e <span class="highlight">Selenium</span> que aceleraram e melhoraram o fluxo de atividades envolvendo o <span class="highlight">ERP da empresa.</span> <br><br> Na faculdade, tive como foco a linguagem <span class="highlight">Java</span>, onde por meio, majoritariamente do design think, prototipei e programei, softwares e websites ao qual me ajudaram muito a entender metodologias de desenvolvimento. <br><br> Hoje, com todo o conhecimento variado que tenho, pretendo me tornar um <span class="highlight">desenvolvedor</span>, aplicando todos os conceitos que aprendi, buscando aprender sempre mais.
+                                    Pude atuar como estagiário na <span class="highlight"><a target="_blank" href="https://servix.com/">Servix Informática</a></span>, conhecendo diversas áreas da Infraestrutura de uma empresa. Reconheci a importância em saber um pouco sobre redes, e o que a aplicação, ou má aplicação dela pode causar. Aprendi sobre a segurança, tanto de redes, quanto WEB, e acredito ter um bom conhecimento em relação a boas práticas e cuidados quando trabalhando com produtos de uma empresa. Desenvolvi automações com <span class="highlight">VBA</span> e <span class="highlight">Selenium</span> que aceleraram e melhoraram o fluxo de atividades envolvendo o <span class="highlight"><a target="_blank" href="https://www.qualitor.com.br/">ERP da empresa.</a></span> <br><br> Na faculdade, tive como foco a linguagem <span class="highlight">Java</span>, onde por meio, majoritariamente do design think, prototipei e programei, softwares e websites no padrão <span class="highlight">MVC</span> ao qual me ajudaram muito a entender metodologias de desenvolvimento. <br><br> Hoje, com todo o conhecimento variado que tenho, pretendo me tornar um <span class="highlight">desenvolvedor</span>, aplicando todos os conceitos que aprendi, buscando aprender sempre mais.
                                 </p>
                             </section><br><br><br><br>
                             <section class="col-12 col-experiencia" id="experiencia">

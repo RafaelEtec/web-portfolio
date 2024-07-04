@@ -16,6 +16,7 @@ new Vue({
     data() {
         return {
             isMobile: ism,
+            show: false
         }
     }
 })

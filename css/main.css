@@ -58,7 +58,7 @@ body {
 .footer {
     position: fixed;
     height: 3.2rem;
-    width: 14rem;
+    width: 20rem;
     bottom: 10%;
     left: 6.5%;
 }
@@ -127,6 +127,10 @@ body {
     transition: transform .3s ease-out;
 }
 
+.bi-file-earmark-person {
+    left: -2.8%;
+}
+
 .svg-credly {
     position: relative;
     width: 100%;
@@ -137,6 +141,7 @@ body {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 .blur {
@@ -147,6 +152,17 @@ a {
 
 .highlight {
     color: #64FFDA;
+    transition: transform .3s ease-in-out;
+}
+
+.emoji_flag {
+    margin-right: 0.2rem;
+    font-size: 1.2rem;
+    font-family: "Noto Color Emoji", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    opacity: 0.5;
+    transition: transform .3s ease-out;
 }
 
 @media (width < 1200px) {
@@ -156,7 +172,7 @@ a {
     .footer {
         position: relative;
         height: 3.2rem;
-        width: 14rem;
+        width: 20rem;
         left: -1.2rem;
         bottom: 0rem;
     }
@@ -197,7 +213,7 @@ a {
     .footer {
         position: relative;
         height: 3.2rem;
-        width: 14rem;
+        width: 20rem;
         left: -1.2rem;
         bottom: 0rem;
     }
@@ -245,7 +261,7 @@ a {
     .footer {
         position: relative;
         height: 3.2rem;
-        width: 14rem;
+        width: 20rem;
         left: -1.2rem;
         bottom: 0rem;
     }
