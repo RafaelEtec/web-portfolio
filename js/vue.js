@@ -11,6 +11,8 @@ if (ism) {
     console.log("Desktop device detected");
 }
 
+const native_language = true;
+
 new Vue({
     el: ".main",
     data() {
@@ -20,3 +22,7 @@ new Vue({
         }
     }
 })
+
+function clicado() {
+    
+}
