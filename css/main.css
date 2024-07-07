@@ -1,6 +1,5 @@
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 body {
@@ -243,6 +242,9 @@ a {
 }
 
 @media (width < 430px) {
+    body {
+        overflow: hidden;
+    }
     .left-panel {
         height: 90%;
     }
