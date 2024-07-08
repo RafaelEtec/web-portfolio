@@ -37,13 +37,13 @@
                             <nav class="nav appear-nav">
                                 <ul class="nav flex-column">
                                     <li class="nav-item" id="navs">
-                                        <a id="nav-link-s" class="nav-link active" onclick="clicado()" aria-current="page" href="#sobre-mim"> Sobre mim</a>
+                                        <a id="nav-link-s" class="nav-link active" aria-current="page" href="#sobre-mim"> Sobre mim</a>
                                     </li>
                                     <li class="nav-item" id="nave">
-                                        <a id="nav-link-e" class="nav-link" onclick="clicado()" href="#experiencia" > Expêriencia</i></a>
+                                        <a id="nav-link-e" class="nav-link" href="#experiencia" > Expêriencia</i></a>
                                     </li>
                                     <li class="nav-item" id="navp">
-                                        <a id="nav-link-p" class="nav-link" onclick="clicado()" href="#projetos"> Projetos</i></a>
+                                        <a id="nav-link-p" class="nav-link" href="#projetos"> Projetos</i></a>
                                     </li>
                                 </ul>
                             </nav>
@@ -78,19 +78,29 @@
                                     Pude atuar como estagiário na <span class="highlight"><a target="_blank" href="https://servix.com/">Servix Informática</a></span>, conhecendo diversas áreas da Infraestrutura de uma empresa. Reconheci a importância em saber um pouco sobre redes, e o que a aplicação, ou má aplicação dela pode causar. Aprendi sobre a segurança, tanto de redes, quanto WEB, e acredito ter um bom conhecimento em relação a boas práticas e cuidados quando trabalhando com produtos de uma empresa. Desenvolvi automações com <span class="highlight">VBA</span> e <span class="highlight">Selenium</span> que aceleraram e melhoraram o fluxo de atividades envolvendo o <span class="highlight"><a target="_blank" href="https://www.qualitor.com.br/">ERP da empresa.</a></span> <br><br> Na faculdade, tive como foco a linguagem <span class="highlight">Java</span>, onde por meio, majoritariamente do design think, prototipei e programei, softwares e websites no padrão <span class="highlight">MVC</span> ao qual me ajudaram muito a entender metodologias de desenvolvimento. <br><br> Hoje, com todo o conhecimento variado que tenho, pretendo me tornar um <span class="highlight">desenvolvedor</span>, aplicando todos os conceitos que aprendi, buscando aprender sempre mais.
                                 </p>
                             </section><br><br><br><br>
+                            
+                            <p class="titles">Experiência</p>
                             <section class="col-12 col-experiencia" id="experiencia">
-                                <p class="p-rp rp-experiencia exp-1">
-                                    Ago 2022 - Jun 2024 <span class="highlight">Estagiário</span>, Servix Informática Ltda
-                                </p>
-
-                                <p class="p-rp rp-experiencia exp-2">
-                                    Jan 2021 - o momento <span class="highlight">Técnico de Informática</span>, Autônomo
-                                </p>
+                                <div class="d-exp" v-for="exp in experiencias">
+                                    <p class="p-rp p-rp-e rp-experiencia">
+                                        {{exp.periodo}} <span class="highlight">{{exp.cargo}}</span>, {{exp.empresa}}
+                                    </p>
+                                    <p class="p-rp">
+                                        {{exp.descricao}}
+                                    </p>
+                                </div>
                             </section><br><br><br><br>
+                            
+                            <p class="titles">Projetos</p>
                             <section class="col-12 col-projetos" id="projetos">
-                                <p class="p-rp rp-projetos">
-                                    Projetos - TO-DO
-                                </p>
+                                <div class="d-proj" v-for="proj in projetos">
+                                    <p class="p-rp p-rp-p rp-projetos">
+                                        <span class="highlight">{{proj.titulo}}</span>
+                                    </p>
+                                    <p class="p-rp p-rp-l">
+                                        {{proj.descricao}}
+                                    </p>
+                                </div>
                             </section>
                         </main>
                     </div>
