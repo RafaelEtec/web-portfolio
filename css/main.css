@@ -271,6 +271,7 @@ a {
     .left-panel {
         top: 13%;
         left: 6.5%;
+        float: left;
         display: inline-flex;
         position: relative;
         height: 50%;
@@ -290,6 +291,12 @@ a {
 @media (width < 430px) {
     .left-panel {
         height: 90%;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: transparent; 
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: transparent; 
     }
 }
 
