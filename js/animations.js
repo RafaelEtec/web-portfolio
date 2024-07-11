@@ -19,7 +19,6 @@ var i = 0;
 var txt = 'Rafael Goulart';
 var speed = 150;
 
-
 function typeWriter() {
   if (i < txt.length) {
     document.getElementById("lp-nome").innerHTML += txt.charAt(i);
