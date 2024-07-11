@@ -288,9 +288,6 @@ a {
 }
 
 @media (width < 430px) {
-    body {
-        overflow: hidden;
-    }
     .left-panel {
         height: 90%;
     }
