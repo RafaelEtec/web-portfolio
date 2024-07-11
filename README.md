@@ -7,6 +7,6 @@ Anime.js
 
 Not yet finished!
 
-credits: \
+references: \
 [https://github.com/bchiang7/v4](https://github.com/bchiang7/v4) \
 [https://www.w3schools.com/howto/](https://www.w3schools.com/howto/)
