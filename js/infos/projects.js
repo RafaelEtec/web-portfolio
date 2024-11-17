@@ -1,23 +1,28 @@
 var portfolio = {
     titulo: "Portfólio WEB",
-    descricao: "Website pessoal construído com HTML, CSS, JavaScript, Vue.js e Anime.js, atualmente hospedado no GitHub Pages"
-};
-var infosec = {
-    titulo: "InfoSec - Guardiões da noite",
-    descricao: "Protótipo de aplicativo de controle de funcionários, destinado a profissionais de segurança de bairro noturnos. Elaborado em grupo como projeto de final de curso. Acreditamos no avanço da ideia"
+    descricao: {
+        'https://github.com/RafaelEtec/web-portfolio': "Website pessoal construído com HTML, CSS, JavaScript, Vue.js e Anime.js, atualmente hospedado no GitHub Pages"
+    }
 };
 
 var go_game = {
-    titulo: "Jogo em Golang",
-    descricao: "A fim de aprender a linguagem GO, decidi criar um jogo no estilo Temple Run"
+    titulo: "Jogos em Golang",
+    descricao: {
+        'https://github.com/RafaelEtec/go_tictactoe': "Jogo da Velha - DONE",
+        'https://github.com/RafaelEtec/go_sudoku': "SUDOKU - DONE",
+        'https://github.com/RafaelEtec/go_game': "RPG - IN PROGRESS"
+    }
 };
 
-var hackthebox = {
-    titulo: "HackTheBox Machines Tutorial",
-    descricao: "Elaboração de um guia em formato de página web ensinando a completar os desafios da plataforma de Hacking"
+var java = {
+    titulo: "Aplicações em Java",
+    descricao: {
+        'https://github.com/RafaelEtec/PI4': "E-Commerce - Disciplina Musical - DONE",
+        'https://github.com/RafaelEtec/Jogo_da_Velha': "Jogo da Velha - DONE"
+    }
 };
 
-const projetos = {portfolio, go_game, hackthebox};
+const projetos = {portfolio, go_game, java};
 
 new Vue({
     el: "#col-projetos",

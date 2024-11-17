@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
     <title>Rafael Ferreira Goulart</title>
 </head>
 <body>
@@ -56,6 +58,7 @@
                                     <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/rafael-goulart-/"><i class="bi bi-linkedin"></i></a>
                                     <a rel="noopener noreferrer" target="_blank" href="https://app.hackthebox.com/users/1845183"><i class="bi bi-box"></i></a>
                                     <a rel="noopener noreferrer" target="_blank" href="https://www.credly.com/users/rafael-goulart.e73b608e/badges"><i class="bi bi-credly"><svg class="svg-credly" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="x100Y100 meet" viewBox="0 2 16 16" width="32" height="38" class="ac-icon__image"><path stroke="currentColor" d="M7.977 12.47c-2.546 0-4.606-2.035-4.606-4.543 0-2.509 2.06-4.543 4.606-4.543 2.544 0 4.607 2.034 4.607 4.543 0 2.508-2.063 4.543-4.607 4.543m0-11.425H1v6.882c0 3.802 3.124 6.881 6.977 6.881s6.977-3.08 6.977-6.88c0-3.802-3.124-6.883-6.977-6.883" fill="none" fill-rule="evenodd"></path></svg></i></a>
+                                    <!-- <a class='fab fa-hackerrank' style='font-size:36px'></a> -->
                                     <a @click="show = !show" class="bi bi-file-earmark-person"></a>
                                     <template v-if="show">
                                         <i class="emoji_flag"><a href="docs/rafael-goulart-cv-pt.pdf" target="_blank">🇧🇷</a></i>
@@ -104,14 +107,19 @@
                                     <p class="p-rp p-rp-p rp-projetos">
                                         <span class="highlight">{{proj.titulo}}</span>
                                     </p>
-                                    <p class="p-rp p-rp-l">
-                                        {{proj.descricao}}
-                                    </p>
+                                    <ul>
+                                        <p class="p-rp">
+                                            <template v-for="(topico, index) in proj.descricao">
+                                                <li><a :href="index">{{topico}}</a></li>
+                                                <br>
+                                            </template>
+                                        </p>
+                                    </ul>
                                 </div>
                             </section>
                         </main>
                         <div>
-                            <br>
+                            <br><br><br><br><br><br><br><br><br>
                         </div>
                     </div>
                 </div>
