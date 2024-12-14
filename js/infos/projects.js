@@ -10,6 +10,7 @@ var go_game = {
     descricao: {
         'https://github.com/RafaelEtec/go_tictactoe': "Jogo da Velha - DONE",
         'https://github.com/RafaelEtec/go_sudoku': "SUDOKU - DONE",
+        'https://github.com/RafaelEtec/go_minesweeper': "Campo minado - DONE",
         'https://github.com/RafaelEtec/go_game': "RPG - IN PROGRESS"
     }
 };
