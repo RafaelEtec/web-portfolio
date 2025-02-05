@@ -1,7 +1,7 @@
 var portfolio = {
     titulo: "Portfólio WEB",
     descricao: {
-        'https://github.com/RafaelEtec/web-portfolio': "Website pessoal construído com HTML, CSS, JavaScript, Vue.js e Anime.js, atualmente hospedado no GitHub Pages"
+        'https://github.com/RafaelEtec/web-portfolio': "Website pessoal construído com HTML, CSS, JavaScript, Vue.js, Anime.js e P5.js, atualmente hospedado no GitHub Pages"
     }
 };
 
