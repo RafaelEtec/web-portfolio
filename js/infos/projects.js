@@ -16,6 +16,13 @@ var go_game = {
     }
 };
 
+var go_api = {
+    titulo: "API RESTful",
+    descricao: {
+        'https://github.com/RafaelEtec/parking-lot': "Estacionamento - Golang - Gin - MySQL"
+    }
+};
+
 var java = {
     titulo: "Aplicações em Java",
     descricao: {
@@ -24,7 +31,7 @@ var java = {
     }
 };
 
-const projetos = {portfolio, go_game, java};
+const projetos = {portfolio, go_game, go_api, java};
 
 new Vue({
     el: "#col-projetos",
