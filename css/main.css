@@ -208,7 +208,13 @@ a {
 }
 
 section {
-    margin-top: 18rem;
+    margin-top: 12rem;
+}
+
+#ticp {
+    font-size: 16pt;
+    color: #64FFDA;
+    margin-left: 40%;
 }
 
 @media (width < 1200px) {
