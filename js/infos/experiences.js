@@ -14,7 +14,7 @@ var tecnico_informatica = {
     cargo: "Técnico de Informática",
     empresa: "Autônomo",
     descricao: {
-        topico1: "Em conjunto com meu pai, realizando manutenções, troca de peças, formatação, limpeza e atualização de SO de computadores e notebooks.",
+        topico1: "Manutenções, troca de peças, formatação, limpeza e atualização de SO de computadores e notebooks.",
     }
 };
 
