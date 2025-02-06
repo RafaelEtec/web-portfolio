@@ -314,6 +314,12 @@ section {
 }
 
 @media (width < 400px) {
+    #ticp {
+        margin-left: 20%;
+    }
+    #tictactoe {
+        margin-left: -38%;
+    }
     .lp-nome {
         font-family: "Roboto Mono", monospace;
         font-size: 2.2rem;

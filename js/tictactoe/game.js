@@ -107,12 +107,11 @@ function draw() {
         let resultP = select('#resultado');
         resultP.style('font-size', '16pt');
         resultP.style('color', '#64FFDA');
+        resultP.style('margin-left', '45%');
         if (result == 'tie') {
-            resultP.style('margin-left', '45%');
             resultP.html('Empate 😳');
             result
         } else {
-            resultP.style('margin-left', '45%');
             resultP.html(`${result} Vence 😎`);
         }
     }
