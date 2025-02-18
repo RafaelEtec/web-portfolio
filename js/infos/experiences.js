@@ -9,16 +9,8 @@ var servix = {
         topico4: "Selenium - Elaboração de automações para facilitar e agilizar o processo de atividades envolvendo as plataformas utilizadas pela empresa."
     }
 };
-var tecnico_informatica = {
-    periodo: "Jan 2021 - o momento",
-    cargo: "Técnico de Informática",
-    empresa: "Autônomo",
-    descricao: {
-        topico1: "Manutenções, troca de peças, formatação, limpeza e atualização de SO de computadores e notebooks.",
-    }
-};
 
-const experiencias = {servix, tecnico_informatica};
+const experiencias = {servix};
 
 new Vue({
     el: "#col-experiencia",

@@ -17,7 +17,7 @@ var go_game = {
 };
 
 var go_api = {
-    titulo: "API RESTful",
+    titulo: "APIs RESTful",
     descricao: {
         'https://github.com/RafaelEtec/parking-lot': "Estacionamento - Golang - Gin - MySQL"
     }
@@ -31,7 +31,14 @@ var java = {
     }
 };
 
-const projetos = {portfolio, go_game, go_api, java};
+var react = {
+    titulo: "Aplicações em React Native",
+    descricao: {
+        'https://github.com/RafaelEtec/react-native-segueolider': "Segue o Líder"
+    }
+}
+
+const projetos = {portfolio, go_game, go_api, java, react};
 
 new Vue({
     el: "#col-projetos",
