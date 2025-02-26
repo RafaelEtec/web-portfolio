@@ -34,7 +34,7 @@ var java = {
 var react = {
     titulo: "Aplicações em React Native",
     descricao: {
-        'https://github.com/RafaelEtec/react-native-segueolider': "Segue o Líder"
+        'https://github.com/RafaelEtec/segue-o-lider': "Segue o Líder"
     }
 }
 
