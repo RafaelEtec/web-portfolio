@@ -34,7 +34,7 @@ var java = {
 var react = {
     titulo: "Aplicações em React Native",
     descricao: {
-        'https://github.com/RafaelEtec/segue-o-lider': "Segue o Líder"
+        'https://github.com/RafaelEtec/segue-o-lider': "Segue o Líder - Este projeto React Native representa um marco no meu aprendizado sobre desenvolvimento mobile. Criado para armazenar a pontuação de jogadores em partidas presenciais, explora tecnologias como Expo, Appwrite e Nativewind. Conta com autenticação segura, navegação dinâmica, lista de amigos, upload de mídia e um design responsivo. Mais que uma aplicação funcional, é um estudo prático que consolidou meus conhecimentos na criação de apps móveis multiplataforma."
     }
 }
 
