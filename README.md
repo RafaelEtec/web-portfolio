@@ -1,4 +1,4 @@
-[My web portfolio](https://rafaeletec.github.io/web-portfolio/)\
+[My web portfolio](https://rafaeletec.github.io/web-portfolio/)
 
 Using: \
 HTML, CSS, JS \
