@@ -1,4 +1,4 @@
-[My web portfolio](https://rafaeletec.github.io/web-portfolio/)
+[My web portfolio](https://rafaelgoulart.netlify.app/)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a4a399e5-f87f-4e62-b0c4-ec052594eb78/deploy-status)](https://app.netlify.com/sites/rafaelgoulart/deploys)
 
