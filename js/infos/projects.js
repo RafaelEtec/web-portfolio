@@ -38,7 +38,14 @@ var react = {
     }
 }
 
-const projetos = {portfolio, go_game, go_api, java, react};
+var next = {
+    titulo: "Aplicações em Next.js",
+    descricao: {
+        'https://github.com/RafaelEtec/bookstorm': "BookStorm - É uma plataforma moderna e escalável. Permite empréstimo de livros com notificações automáticas, gestão de usuários e análise de dados. Conta com uma interface intuitiva para usuários e um painel administrativo completo. Utiliza tecnologias avançadas para garantir desempenho, segurança e automação."
+    }
+}
+
+const projetos = {portfolio, react, next, go_game};
 
 new Vue({
     el: "#col-projetos",
