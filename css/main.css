@@ -134,6 +134,10 @@ body {
     text-align: justify;
 }
 
+.p-img {
+    width: 98%;
+}
+
 .li-social {
     list-style-type: none;
     display: inline-table;
